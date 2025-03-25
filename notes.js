@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const notesContainer = document.getElementById('notes');
 
-    // Fetch notes from the GitHub repository
+    // Fetch notes from the sneha-tutions repository
     fetch(`https://api.github.com/repos/CompeteX001/sneha-tutions/contents/uploads/${classValue}/${boardValue}/${subjectValue}`)
         .then(response => response.json())
         .then(data => {
